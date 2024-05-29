@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  
+}
+body{
+  background: #b6b0b013;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1rem;
+  position: fixed;
+  top: 1;
+  box-shadow: 0rem 0rem 0.4rem 0.1rem rgb(160, 158, 158);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .search {
+  display: flex;
+}
+
+.navbar .search input {
+  padding: 5px;
+  box-sizing: border-box;
+  border-color: #000000;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.navbar .search button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+.navbar .search button:hover{
+  color: #817d7d;
+}
+.navbar .nav-links {
+  display: flex;
+  gap: 3  rem;
+  margin-right: 7rem;
+}
+
+.navbar .nav-links a {
+  color: #000000;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #837d7d;
+  color: #ffffff;
+}
+
+.burger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px; /* Below the navbar */
+  left: 0;
+  height: calc(100% - 60px); /* Full height minus navbar height */
+  width: 60px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  box-shadow: 0rem 1rem 0.4rem 0.1rem rgb(160, 158, 158);;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.feedback {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-left: 1rem;
+  margin-top: 1rem;
+  max-width: 50%;
+}
+
+.content-box {
+  background-color: #fff;
+  padding: 2.5rem;
+  height: 70%;
+  width: 50%;
+  margin-left: 0.5rem;
+  border-radius: 1rem;
+  margin-top: 2.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box img {
+  max-width: 100%;
+  height: 40%;
+  border-radius: 5px;
+  margin-bottom: 0rem;
+}
+
+.content-box h2 {
+  margin-bottom: 0rem;
+}
+
+.content-box p {
+  margin-bottom: 0.5rem;
+}
+
+.content-box button.buy-now-button {
+  padding: 7px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.content-box button.buy-now-button:hover {
+  background-color: #218838;
+}
+
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5%;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.feedback-board {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  width: 25%;
+  height: 80vh;
+  margin-top: 3.5rem;
+  margin-left: 60rem;
+  position: fixed;
+ 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feedback-board h2 {
+  margin-bottom: 1rem;
+}
+
+.feedback-board textarea {
+  width: 100%;
+  height: 12vh;
+  border-radius: 5px;
+  border: 1px solid #101112;
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+.feedback-board button.submit-feedback-button {
+  padding: 10px 15px;
+  background-color: #000000;
+  color: rgb(255, 254, 254);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-board button.submit-feedback-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 750px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #e2b1ad;
+    position: absolute;
+    top: 4rem;
+    left: 3.6rem;
+    width: 90%;
+    text-align: center;
+  }
+
+ .content-box{
+        margin-left: 3rem;
+        width: 100%;
+ }
+ 
+ 
+ 
+
+
+  .navbar .nav-links a {
+    padding: 10px;
+    border-top: 1px solid #444;
+  }
+
+  .navbar .burger {
+    display: block;
+    margin-right: 2rem;
+  }
+}
